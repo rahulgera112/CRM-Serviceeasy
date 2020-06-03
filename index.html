@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM ServiceEasy</title>
+    <!--Bootstrap CDN-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <link rel="icon" href="icon.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><span style="color:teal">Service</span>Easy</h3>
+            </div>
+            <hr style="border: 1px solid white"> 
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#"><i class="fas fa-tachometer-alt" style="margin-right: 7px;"></i> Dashboard</a>
+                </li>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-home" style="margin-right: 7px;"></i> Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Add Customer</a>
+                        </li>
+                        <li>
+                            <a href="#">List</a>
+                        </li>
+                        <li>
+                            <a href="#">Groups</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#transactionSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-exchange-alt" style="margin-right: 8px;"></i>Transaction</a>
+                    <ul class="collapse list-unstyled" id="transactionSubmenu">
+                        <li>
+                            <a href="#">New Deposit</a>
+                        </li>
+                        <li>
+                            <a href="#">New Expense</a>
+                        </li>
+                        <li>
+                            <a href="#">Transfer</a>
+                        </li>
+                        <li>
+                            <a href="#">View Transaction</a>
+                        </li>
+                        <li>
+                            <a href="#">Balance Sheet</a>
+                        </li>
+                        <li>
+                            <a href="#">Transfer</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#salesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-shopping-cart" style="margin-right: 8px;"></i>Sales</a>
+                    <ul class="collapse list-unstyled" id="salesSubmenu">
+                        <li>
+                            <a href="#">Invoices</a>
+                        </li>
+                        <li>
+                            <a href="#">New Voices</a>
+                        </li>
+                        <li>
+                            <a href="#">Recurring invoices</a>
+                        </li>
+                        <li>
+                            <a href="#">New Recurring invoices</a>
+                        </li>
+                        <li>
+                            <a href="#">quotes</a>
+                        </li>
+                        <li>
+                            <a href="#">Payments</a>
+                        </li>
+                        <li>
+                            <a href="#">Tax Rates</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#taskSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-tasks"  style="margin-right: 8px;"></i>Task</a>
+                    <ul class="collapse list-unstyled" id="taskSubmenu">
+                        <li>
+                            <a href="#">Running Task</a>
+                        </li>
+                        <li>
+                            <a href="#">Active Task</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#accountingSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-shopping-bag" aria-hidden="true"  style="margin-right: 8px;"></i>Accounting</a>
+                    <ul class="collapse list-unstyled" id="accountingSubmenu">
+                        <li>
+                            <a href="#">Client Payment</a>
+                        </li>
+                        <li>
+                            <a href="#">Expense Management</a>
+                        </li>
+                        <li>
+                            <a href="#">Expense Category</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#attendanceSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-bell" style="margin-right: 8px;"></i>Attendance</a>
+                    <ul class="collapse list-unstyled" id="attendanceSubmenu">
+                        <li>
+                            <a href="#">Time History</a>
+                        </li>
+                        <li>
+                            <a href="#">Time Change Request</a>
+                        </li>
+                        <li>
+                            <a href="#">Attendance Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#recruitmentSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-clipboard" style="margin-right: 8px;"></i>Recruitment</a>
+                    <ul class="collapse list-unstyled" id="recruitmentSubmenu">
+                        <li>
+                            <a href="#">Jobs Posted</a>
+                        </li>
+                        <li>
+                            <a href="#">Jobs Application</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#payrollSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-exchange-alt" style="margin-right: 8px;"></i>payroll</a>
+                    <ul class="collapse list-unstyled" id="payrollSubmenu">
+                        <li>
+                            <a href="#">Salary Template</a>
+                        </li>
+                        <li>
+                            <a href="#">Hourly</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Salary</a>
+                        </li>
+                        <li>
+                            <a href="#">Employee Salary List</a>
+                        </li>
+                        <li>
+                            <a href="#">Make payment</a>
+                        </li>
+                        <li>
+                            <a href="#">Payroll Summary</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Items</a>
+                </li>
+                <li>
+                    <a href="#">Department</a>
+                </li>
+                <li>
+                    <a href="#">Training</a>
+                </li>
+                <li>
+                    <a href="#">Notice Board</a>
+                </li>
+                <li>
+                    <a href="#">Message/Chat</a>
+                </li>
+            </ul>
+        </nav>
+
+    <!-- Page Content including upper nav bar -->
+    <div id="page-content">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                </button>
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-envelope fa-2x"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-bell fa-2x"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-cog fa-2x"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-smile fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Content Wrapper == contains page content--> 
+        <div class="content-wrapper" style="min-height: 1276px;">
+            <section class="content-header">
+                <div class="header-title">
+                    <a href="#"><a href="#"><i class="fas fa-tachometer-alt" style="font-size: 26px;margin-right:10px"></i><h1 style="display: inline-block;">CRM Admin Dashboard</h1>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div id="cardbox">
+                            <div class="statistic-box">
+                               <div class="counter-number pull-right">
+                                <span class="count-number">11</span>
+                               </div>
+                               <h3> Active Client</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div id="cardbox">
+                            <div class="statistic-box">
+                                <div class="counter-number pull-right">
+                                    <span class="count-number">4</span>
+                                </div>
+                                <h3>  Active Admin</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div id="cardbox">
+                            <div class="statistic-box">
+                                <div class="counter-number pull-right">
+                                    <span class="count-number">1000</span>
+                                </div> 
+                                <h3>  Total Expenses</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div id="cardbox">
+                            <div class="statistic-box">
+                            <div class="counter-number pull-right">
+                                <span class="count-number">10</span>
+                            </div>
+                            
+                                <h3> Running Projects</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <h4>Upcoming Events</h4>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="panel-data">
+                                    <div class="event-date">
+                                        <span class="day">2</span>
+                                        <span class="month">Mar</span>
+                                    </div>
+                                    <div class="event-name">
+                                        <h5>Marketing Policy</h5>
+                                    </div>
+                                </div><hr>
+                                <div class="panel-data">
+                                    <div class="event-date">
+                                        <span class="day">2</span>
+                                        <span class="month">Mar</span>
+                                    </div>
+                                    <div class="event-name">
+                                        <h5>Marketing Policy</h5>
+                                    </div>
+                                </div><hr>
+                                <div class="panel-data">
+                                    <div class="event-date">
+                                        <span class="day">2</span>
+                                        <span class="month">Mar</span>
+                                    </div>
+                                    <div class="event-name">
+                                        <h5>Marketing Policy</h5>
+                                    </div>
+                                </div><hr>
+                                <div class="panel-data">
+                                    <div class="event-date">
+                                        <span class="day">2</span>
+                                        <span class="month">Mar</span>
+                                    </div>
+                                    <div class="event-name">
+                                        <h5>Marketing Policy</h5>
+                                    </div>
+                                </div><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <h4>Running Projects</h4>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="panel-data">
+                                    <h4>Database Configuration</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                          70%
+                                        </div>
+                                    </div>
+                                </div><hr>
+                                <div class="panel-data">
+                                    <h4>Accounting Policy</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                          40%
+                                        </div>
+                                    </div>
+                                </div><hr>
+                                <div class="panel-data">
+                                    <h4>Accounting Policy</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                          70%
+                                        </div>
+                                    </div>
+                                </div><hr>
+                                <div class="panel-data">
+                                    <h4>Accounting Policy</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                                          20%
+                                        </div>
+                                    </div>
+                                </div><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
